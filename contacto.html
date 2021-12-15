@@ -11,8 +11,9 @@
       crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <body class="landing">
 <header>
-      <img src="imagenes/paris.jpg" alt="paris" />
+      <img src="imagenes/paris.jpg" alt="paris" class="img-fluid"/>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -22,23 +23,34 @@
       </nav>
     </header>
     <section>
-      <form id="formulario">
-        <fieldset>
-          <legend>¡Dejanos tus datos!</legend>
-          <div>
-            <label for="nombre" >Nombre y apellido:</label>
-            <input placeholder= "Maria Gomez"type="text"/>
+        <form id="formulario">
+        <div >
+            <label for="nombre y apellido" class="form-label">Nombre y apellido:</label>
+            <input type="text" class="form-control" placeholder="Facundo Streitenberger">
         </div>
-          <div>
-              <label for="mail">Mail:</label>
-              <input placeholder= "xxxxxx@xxxxx.com"type="email" /></div>
-              <div>
-              <label for="personas" >Número de personas:</label>
-              <input min="1" max="10"></div>
-          <div><label for="reserva">Día a realizar el tour:     </label><input type="date" /></div>
-          <button type>Enviar reserva</button>
-      </form>
-    </section>
+
+        <div >
+            <label for="correo" class="form-label">Mail</label>
+            <input type="text" class="form-control"  placeholder="xxxxxxxx@xxxxx.com">
+        </div>
+    
+        <div >
+            <label for="personas" class="form-label">Número de personas</label>
+            <input type="number" class="form-control"  min="1" max="10">
+         </div>
+   
+
+        <div>
+                <label for="fecha"  class="form-label"> Día a realizar el tour:</label>
+                <input type="date"  class="form-control"  >
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="Enviar reserva"> 
+        <input class="btn btn-primary" type="reset" value="Borrar formulario">
+
+    </section>  
+      
+    </form>
     <footer class="footer"><p>Powered by Lu Salinas</p></footer>
 
   </body>

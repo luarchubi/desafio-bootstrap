@@ -12,10 +12,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="landing">
     <header>
-      <img src="imagenes/paris.jpg" alt="paris" />
+      <img src="imagenes/paris.jpg" alt="paris" class="img-fluid" />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -41,9 +47,30 @@
     </section>
 
     <div class="fotos">
-      <div><img id="torre" src="./imagenes/torre.jpg" alt="" /></div>
-      <div><img id="arco" src="./imagenes/arco.jpg" alt="" /></div>
-      <div><img id="mona" src="./imagenes/mona.jpg" alt="" /></div>
+      <div>
+        <img
+          id="torre"
+          class="img-thumbnail"
+          src="./imagenes/torre.jpg"
+          alt="torre-eiffel"
+        />
+      </div>
+      <div>
+        <img
+          id="arco"
+          class="img-thumbnail"
+          src="./imagenes/arco.jpg"
+          alt="arco-de-triunfo"
+        />
+      </div>
+      <div>
+        <img
+          id="mona"
+          class="img-thumbnail"
+          src="./imagenes/mona.jpg"
+          alt="mona-lisa"
+        />
+      </div>
     </div>
     <footer class="footer"><p>Powered by Lu Salinas</p></footer>
 
